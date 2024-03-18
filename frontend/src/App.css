@@ -1,38 +1,66 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* signup and Login */
+
+.bg_signlogin{
+  background-image: url('../public/images/tree-736877_1920.jpg');
+  height:100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-signin{
+  background-image: url('../public/images/tree-736877_1920_copy.jpg');
+  height:100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.signup-input{
+  padding: 8px 5px !important;
+  background: #333333;
+  border: 1px solid transparent;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.signup-input:hover{
+  transform: scale(1.05)
+}
+
+.signup-button{
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #333333;
+  transition: all 0.5s;
+  letter-spacing: 3px;
+}
+
+.signup-button:hover{
+  background-color: #333333;
+  transform: scale(1.05);
+}
+
+.c-a-account{
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.no-acct{
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-acct:hover{
+text-decoration: underline;
+transform: scale(1.05);
 }
