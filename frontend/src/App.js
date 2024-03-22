@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Signup from './Components/Signup/signup';
 import SignIn from './Components/Login/login';
+import Signup from './Components/Signup/signup';
+import routing from './Utils/Routes';
+import {useRoutes} from 'react-router-dom'
 
 function App() {
+  const route = useRoutes(routing)
   return (
     <>
-      <Signup />
-      <SignIn />
+      {route}
     </>
   );
 }
